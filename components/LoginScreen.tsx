@@ -1,5 +1,3 @@
-// components/LoginScreen.tsx
-
 import React from "react";
 import {
   StyleSheet,
@@ -43,7 +41,7 @@ export default function LoginScreen({ navigation }: Props): JSX.Element {
       <View style={styles.innerContainer}>
         <Image source={loginImage} style={styles.image} resizeMode="cover" />
         <View style={styles.formContainer}>
-          <Text style={styles.title}>Hoş Geldiniz</Text>
+          <Text style={styles.title}>Hi there!</Text>
           <TextInput
             style={styles.input}
             placeholder="E-posta"
@@ -52,10 +50,10 @@ export default function LoginScreen({ navigation }: Props): JSX.Element {
           />
           <TextInput style={styles.input} placeholder="Şifre" secureTextEntry />
           <TouchableOpacity style={styles.button} onPress={handleLogin}>
-            <Text style={styles.buttonText}>Giriş Yap</Text>
+            <Text style={styles.buttonText}>Log in</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.forgotPassword}>
-            <Text style={styles.forgotPasswordText}>Şifremi Unuttum</Text>
+            <Text style={styles.forgotPasswordText}>Forgot Password</Text>
           </TouchableOpacity>
         </View>
       </View>
